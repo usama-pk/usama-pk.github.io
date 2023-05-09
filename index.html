@@ -1,0 +1,671 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Muhammad Usama</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="93d22579-d383-417d-9531-ac243c5bd975" class="page serif"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/met_silk_kashan_carpet.jpg" style="object-position:center 50%"/><h1 class="page-title">Muhammad Usama</h1></header><div class="page-body"><blockquote id="8077013b-c372-400d-b3a8-f1598936f9b0" class="">I&#x27;m a conflicted explorer with a doctoral degree in electrical engineering. I recently started working on urban computing and analyzing data from social media applications to first identify questions and then answering them!!! </blockquote><h1 id="67f6d17e-6dbd-43eb-90e7-48b86de47546" class="">☎️ Contact information</h1><p id="12566e1c-d2b0-42f9-9ce3-0cef699bad3f" class="">📧 Email: osama5124@gmail.com</p><p id="527d6cd5-3e64-4dff-ab58-456049c161bd" class="">🐦 Twitter: <a href="https://twitter.com/osama_sana">@osama_sana</a></p><p id="2dfa1c76-bbc8-46f0-9771-da07b4dfe3bb" class="">🔗 LinkedIn: <a href="https://www.linkedin.com/feed/?trk=opento_lp">Muhammad Usama</a></p><p id="732de6a6-60b8-4d48-8f0b-0e5eebfcc077" class="">Google Scholar :<a href="https://scholar.google.com/citations?user=unGWVYMAAAAJ&amp;hl=en"> Muhammad Usama</a></p><hr id="b6220b94-e336-413b-8df2-fb07ee40625e"/><h1 id="0568d518-f856-43f9-85ea-37f79fa6be45" class=""><strong>👩🏻‍💻</strong> Work experience</h1><h2 id="ee0de35b-8e9e-4b6f-8557-5027a2c9c65a" class="">Assistant Professor </h2><p id="8c8eada8-d706-4c36-9bc9-c0afe537d029" class="">Department of Computer Science, School of Computing,</p><p id="89b58659-8b33-4a20-925b-dfb988df4f60" class=""><em><span style="border-bottom:0.05em solid"><strong>National University of Computer &amp; Emerging Sciences (NUCES), Pakistan</strong></span></em> - <em>(August 2022 — )</em></p><p id="2233aeaa-7e0c-41f8-80d2-84a50f5774b9" class="">I have taught the following courses: </p><ul id="66507485-2336-4116-b838-96ca98c680e9" class="toggle"><li><details open=""><summary>Undergraduate Courses:</summary><p id="78c1e44d-5fad-4925-9de1-b2fe2e512f8c" class="">Computer Organization and Assembly Language </p><p id="4fd5c76d-e686-4a3b-a4c1-aa088b022e4b" class="">Computer Architecture</p><p id="589ade7f-3e7f-4414-9890-d306bb9e8153" class="">Data Science</p></details></li></ul><ul id="20d6c02c-cdcb-441b-8b4d-bdba6d647ea8" class="toggle"><li><details open=""><summary>Graduate Courses:</summary><p id="6c4d2726-5ef6-49c0-9e85-a69a9a3a43c3" class="">Advanced Computer Architecture </p><p id="bdef5520-f27a-4cbf-923b-8bc1b65f0a40" class="">Advanced Analysis of Algorithms</p></details></li></ul><h2 id="1c5456e0-bb61-4317-9241-6635694a6b23" class="">Post-Doc (Research Associate)</h2><p id="ab4fa017-5f5b-4a58-90f8-634786ee8340" class="">Department of Electrical Engineering, Syed Babar Ali School of Science &amp; Engineering (SBASSE), <strong><span style="border-bottom:0.05em solid">Lahore University of Management Sciences (LUMS)</span></strong><strong><span style="border-bottom:0.05em solid"><em>, Pakistan</em></span></strong><em> – (June 2021—August 2022)</em></p><p id="77cce5ef-82a7-44e5-8fd0-e957b0b5fd6a" class="">I am leading a team of researchers in following <strong>three projects</strong>:</p><ol type="1" id="bcb26f39-533e-44af-b7c4-8e2cfabdc0a4" class="numbered-list" start="1"><li>Urban Air Quality Measurement</li></ol><ol type="1" id="e2803d75-a0a5-41ca-bc5f-e98d30cce8d6" class="numbered-list" start="2"><li>Measuring the Urban Sentiment</li></ol><ol type="1" id="7244f427-65f0-4774-9997-9164094d6d74" class="numbered-list" start="3"><li>DeepFake for Good</li></ol><h2 id="2dd789dc-4767-4a9f-943a-31af420d0395" class="">Post-Doc (Research Associate)</h2><p id="19b177d4-7e43-4ba9-8ad5-34dfd851dcb0" class="">School of Informatics, <strong><span style="border-bottom:0.05em solid">The University of Edinburgh, United kingdom</span></strong><em> – (November 2020 - July 2021)</em>  </p><p id="0af970ec-5b71-4676-a2ef-719d4d40bc73" class="">I was part of the team that worked on the adversarial machine learning for next-generation communication networks, machine learning-based jammer detection and localization, and measuring the communication parameters for a major part of Edinburgh city. </p><h2 id="24e9d40b-0449-4b4a-82b4-645c699781bb" class="">Ph.D. Fellow </h2><p id="389067b6-7917-44b0-ba72-a113e3479073" class="">Department of Electrical Engineering, <span style="border-bottom:0.05em solid"><strong>Information Technology University (ITU), Pakistan</strong></span><em> – (September 2016 - December 2020)</em>  </p><p id="5c89a223-3d0c-47c0-9b45-259e06398b76" class="">During my Ph.D., I worked on designing and launching adversarial machine learning on machine learning-based networking applications.</p><h2 id="fe54c7ae-6cb6-49da-991f-76139b32c349" class="">Academic Coordinator  </h2><p id="397dafeb-49f7-425f-b24b-1dea6617a1f7" class="">Department of Electrical Engineering, <span style="border-bottom:0.05em solid"><strong>Information Technology University (ITU), Pakistan</strong></span><em> – (July2015 - September 2016)</em>  </p><p id="1ec2067a-3f3e-4c37-bc91-0cce9ba798c8" class="">I was leading a team of Lab Engineers in designing lab material for the electrical engineering department and dealing with day-to-day coordination among departments.</p><h2 id="d8069ada-20b6-45ce-9836-91fba9247f0e" class="">Lecturer  </h2><p id="7dd1a3eb-1e9f-4679-9e08-dce9e70bbc38" class="">Department of Electrical Engineering,<span style="border-bottom:0.05em solid"><strong> Riphah International University (Faisalabad Campus), Pakistan</strong></span><span style="border-bottom:0.05em solid"><strong><em> </em></strong></span><em>– (February 2013 - May 2015)</em>  </p><p id="e282b8b5-5225-41e2-b064-dabe7b9160b0" class="">I taught undergraduate computer networks and network security courses. </p><h2 id="47f5bf8f-b8f1-49dc-91e6-1b72c6ea45f7" class="">Teaching Assistant  </h2><p id="f5408961-7254-4559-ad93-66568837df43" class="">Department of Electrical Engineering, <span style="border-bottom:0.05em solid"><strong>National University of Computer &amp; Emerging Sciences (NUCES), Pakistan</strong></span><em> – (August 2010 - August 2011)</em>  </p><p id="f27304c9-70ce-408a-8585-f18487648462" class="">I was the teaching assistant for undergraduate Electronics I and II courses.  </p><hr id="27f89ea4-b81a-467f-946b-a5b58428ee0b"/><h1 id="9834a83d-d4bb-4c90-8b5c-fc6d224ba2d6" class="">📚 Education</h1><h2 id="d0ceb2c8-20ee-4c23-8afb-6f4e836ebd1c" class="">Ph.D. Electrical Engineering </h2><p id="da02d4c8-ab9c-4166-a5e0-70cead0c1ece" class="block-color-gray">2020</p><p id="7058bb64-0d76-4a86-a6cf-2ede906db673" class="">Information Technology University (ITU), Pakistan</p><h2 id="066cef81-3f4e-4bff-8183-0dcd7a842fdc" class="">MS. Electrical Engineering </h2><p id="f0e39787-dee4-440b-ae0c-bffa7c48ea13" class="">2013</p><p id="cea17a16-70a2-4040-baaa-80ae4a7a5683" class="">National University of Computer &amp; Emerging Sciences (NUCES), Lahore Campus, Pakistan</p><h2 id="287a4197-f184-4065-aa56-aa4cfb7b5d04" class="">BSc. Telecommunication Engineering </h2><p id="395ec250-32ee-445f-b58a-a0f8c837b440" class="">2010</p><p id="97541892-f333-4169-aa84-25aae5b0bcf5" class="">Government College University Faisalabad (GCUF), Pakistan</p><hr id="c72e76f1-b784-45ef-8955-16ae5f830701"/><h1 id="84f91717-9e15-4342-984a-9b2cd12d7fbc" class="">📜 Dissertations</h1><p id="dfc4c764-15c7-43b6-a169-1bd9fc9f80c2" class=""><span style="border-bottom:0.05em solid"><strong>Doctoral Dissertation:</strong></span> Adversarial Machine Learning and Networking Applications: Attacks &amp; Defenses</p><p id="2731e102-daa2-4e74-b9f5-2f919bd8d28f" class=""><span style="border-bottom:0.05em solid"><strong>MS Dissertation:</strong></span> Post Processing Algorithm for Event Detection in Optical Time Domain Reflectometer</p><h1 id="cea553d8-be1f-4b3c-a106-133131e4a191" class="">🛠 Research:</h1><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications (Accepted for publications in conferences and journals)</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2022</summary><div class="indented"><ul id="605c0a57-a631-4d56-acc2-2c7f2d6d96f2" class="bulleted-list"><li style="list-style-type:disc">R. Tallal Javed, <strong><mark class="highlight-orange"><span style="border-bottom:0.05em solid">Muhammad Usama</span></mark></strong>, Waleed Iqbal, Junaid Qadir, Gareth Tyson, Ignacio Castro, and Kiran Garimella,<span style="border-bottom:0.05em solid"><a href="https://link.springer.com/article/10.1007/s13278-021-00833-0"><strong> “A Deep Dive into COVID-19 Related Messages on WhatsApp in Pakistan”</strong></a></span><strong> </strong>accepted for publication in Social Network Analysis and Mining (SNAM), 2022.</li></ul><ul id="b717e1e3-72f1-4ae6-83ff-c7b75471f39a" class="bulleted-list"><li style="list-style-type:disc">Muhammad Musa, <strong><mark class="highlight-orange"><span style="border-bottom:0.05em solid">Muhammad Usama</span></mark></strong>, and Momin Uppal, <span style="border-bottom:0.05em solid">“Extremism on Social Media: Lynching of Priyantha Kumara Diyawadana”</span> accepted as a poster in IEEE/ACM ASONAM, 2022. </li></ul><ul id="8c5bce74-fbed-45bd-bfd3-01bf2f91a4eb" class="bulleted-list"><li style="list-style-type:disc">Yousaf, Bilal, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Waqas Sultani, Arif Mahmood, and Junaid Qadir, <span style="border-bottom:0.05em solid"><a href="https://link.springer.com/article/10.1007/s00521-022-06902-5"><strong>“Fake Visual Content Detection Using Two-Stream Convolutional Neural Networks”</strong></a></span><span style="border-bottom:0.05em solid"> </span>accepted for publication in Springer Neural Computing and Applications, 2022.</li></ul><ul id="e80c510d-c635-4f44-89ac-4fb1da496c80" class="bulleted-list"><li style="list-style-type:disc">Abdur Rahman, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Muhammad Tahir, Momin Uppal, <strong>“Data driven framework for analysis of air quality landscape for the city of Lahore.”</strong> accepted for publications in 7th SDSC and 17th 3DGeoinfo conferences, UNSW, Australia.</li></ul><ul id="6e729284-cf03-4672-a27d-d0e9a070203a" class="bulleted-list"><li style="list-style-type:disc">Kilinc, C, Marina, MK, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Usama, M</span></strong></mark>, Ergut, S, Crowcroft, J, Gundogdu, T &amp; Akinci, I,  <strong>“JADE: Data-Driven Automated Jammer Detection Framework for Operational Mobile Networks.”</strong> accepted for publication in IEEE International Conference on Computer Communications (INFOCOM 2022).</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2021</summary><div class="indented"><ul id="279262ce-cca3-417d-bf74-302b71b7941b" class="bulleted-list"><li style="list-style-type:disc">Kai Xu, Rajkarn Singh, Hakan Bilen, Marco Fiore, Mahesh K. Marina,<span style="border-bottom:0.05em solid"> </span><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Howard Benn, and Cezary Ziemlicki, <a href="https://dl.acm.org/doi/pdf/10.1145/3485983.3494844"><strong>“SpectraGAN: Spectrum based Generation of City Scale Spatiotemporal Mobile Network Traffic Data”</strong></a> accepted for publication in the ACM CoNext, 2021.</li></ul><ul id="b04dd89d-5b58-4ecf-b855-d0c7536ac33e" class="bulleted-list"><li style="list-style-type:disc">Inaam Ilahi, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Junaid Qadir, Muhammad Umar Janjua, Ala Al-Fuqaha, Dinh Thai Hoang, and Dusit Niyato,  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9536399">“Challenges and Countermeasures for Adversarial Attacks on Deep Reinforcement Learning”</a> accepted for publication in IEEE Transactions on Artificial Intelligence, 2021.</li></ul><ul id="9ff74bf6-86d9-4349-a6a5-0803b2d922c3" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">M. Usama</span></strong></mark>, R. Mitra, I. Ilahi, J. Qadir and M. Marina,<span style="border-bottom:0.05em solid"> </span><span style="border-bottom:0.05em solid"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9314254">“Examining Machine Learning for 5G and Beyond through an Adversarial Lens”</a></span> in IEEE Internet Computing, 2021</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2020</summary><div class="indented"><ul id="42430610-fd96-4c65-b4fd-a80d6a2961ef" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">M. Usama</span></strong></mark>, J. Qadir, A. Al-Fuqaha and M. Hamdi, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8884228">“The Adversarial Machine Learning Conundrum: Can the Insecurity of ML Become the Achilles’ Heel of Cognitive Networks?”</a> in IEEE Network, vol. 34, no. 1, pp. 196-203, January/February 2020</li></ul><ul id="bfef46c5-0e23-493b-9ed6-9bd0a496e1f5" class="bulleted-list"><li style="list-style-type:disc">A. Qayyum, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">M. Usama</span></strong></mark>, J. Qadir and A. Al-Fuqaha, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9003212">“Securing Connected &amp; Autonomous Vehicles: Challenges Posed by Adversarial Machine Learning and the Way Forward”</a> in IEEE Communications Surveys &amp; Tutorials (IEEE-COMST), vol. 22, no. 2, pp. 998-1026, Secondquarter 2020</li></ul><ul id="d7d1625e-ac20-475a-9bce-6ce9c86d1ab5" class="bulleted-list"><li style="list-style-type:disc">Siddique Latif, Junaid Qadir, Adnan Qayyum, <strong><mark class="highlight-orange"><span style="border-bottom:0.05em solid">Muhammad Usama</span></mark></strong>, and Shahzad Younis, <a href="https://ieeexplore.ieee.org/document/9133298/">“Speech Technology for Healthcare: Opportunities, Challenges, and State of the Art”</a> accepted for publication in IEEE Reviews in Biomedical Engineering, (IEEE-RBME), 2020.</li></ul><ul id="15398dcc-0ed4-44bd-8193-a12c145bb0b8" class="bulleted-list"><li style="list-style-type:disc">Adnan Qayyum, Aneeqa Ijaz, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Waleed Iqbal, Junaid Qadir, Yehia Elkhatib, and Ala Al-Fuqaha, <a href="https://www.frontiersin.org/articles/10.3389/fdata.2020.587139/full">“Securing Machine Learning (ML) in the Cloud: A Systematic Review of Cloud ML Security”</a> accepted for publication in the Frontiers in Big Data, 2020.</li></ul><ul id="49758dc2-e116-4208-a35e-9317307a9391" class="bulleted-list"><li style="list-style-type:disc">Inaam Ilahi, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Muhammad Omer Farooq, Muhammad Umar Janjua, and Junaid Qadir, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9314772">“LoRaDRL: Deep Reinforcement Learning Based Adaptive PHY Layer Transmission Parameter Selection for LoRaWAN”</a> accepted for publication in IEEE LCN, 2020.</li></ul><ul id="e6aafe41-e5a8-49a4-aabf-f5d66a066617" class="bulleted-list"><li style="list-style-type:disc">Rana Tallal Javed, Mirza Elaaf Shuja, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Muhammad Furqan Muzammil, Junaid Qadir, Waleed Iqbal, Gareth Tyson, Ignacio Castro, and Kiran Garimella,  <a href="https://ieeexplore.ieee.org/abstract/document/9381360">“A First Look Into COVID-19 Messages on WhatsApp in Pakistan”</a> accepted for publication in the IEEE/ACM International Conference on Advances in Social Network Analysis and Mining, IEEE/ACM ASONAM, 2020.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2019</summary><div class="indented"><ul id="8abc00a7-e191-46a5-b121-0a5ed0147da0" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Junaid Qadir, Aunn Raza, Hunanin Arif, Kok-Lim Alvin Yau, Yehia Elkhatib, Amir Hussain, and Ala Al-Fuqaha, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8713992">“Unsupervised Machine Learning for Networking: Techniques, Applications and Research Challenges”</a>, IEEE Access, 2019.</li></ul><ul id="97b1a4c5-4f45-4dc5-91c3-75dc78adaf4c" class="bulleted-list"><li style="list-style-type:disc">Siddique Latif, Adnan Qayyum, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Junaid Qadir, Andrej Zwitter, and Muhammad Shahzad, <a href="https://ieeexplore.ieee.org/document/8828019">“Caveat emptor: the risks of using big data for human development”</a>, IEEE Technology and Society Magazine, 2019.</li></ul><ul id="b57eb40e-0486-49bc-9403-e808dbf3ea06" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Muhammad Asim, Siddique Latif, Junaid Qadir, and Ala Al-Fuqaha, <a href="https://ieeexplore.ieee.org/document/8766353">“Generative Adversarial Networks for Launching and Thwarting Adversarial Attacks on Network Intrusion Detection Systems”</a> accepted in The 15th International Wireless Communications and Mobile Computing Conference, IEEE IWCMC, 2019.</li></ul><ul id="c4ad2b03-9905-4600-b7bb-ec1f78db9ed3" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Adnan Qayyum, Junaid Qadir, and Ala Al-Fuqaha, <a href="https://ieeexplore.ieee.org/document/8766505">“Black-box Adversarial Machine Learning Attack on Network Traffic Classification”</a> accepted in The 15th International Wireless Communications and Mobile Computing Conference, IEEE IWCMC, 2019.</li></ul><ul id="94a555b3-508e-451f-96bd-368561db589d" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><span style="border-bottom:0.05em solid"><strong>Muhammad Usama</strong></span></mark>, Muhammad Asim, Junaid Qadir, Ala Al-Fuqaha, and Muhammad Ali Imran, <a href="https://ieeexplore.ieee.org/abstract/document/8881843">“Adversarial Machine Learning Attack on Modulation Classification”</a> accepted in the 4th International Conference on UK-China Emerging Technologies, IEEE UCET, 2019.</li></ul><ul id="af3f2447-e504-4f3f-a0e0-d08010e83341" class="bulleted-list"><li style="list-style-type:disc">Salah-ud-din Farooq,<mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid"> Muhammad Usama</span></strong></mark>, Junaid Qadir, and Muhammad Ali Imran, <a href="https://ieeexplore.ieee.org/abstract/document/8881842">“Adversarial ML Attack on Self Organizing Cellular Networks”</a> accepted in the 4th International Conference on UK-China Emerging Technologies, IEEE UCET, 2019.</li></ul><ul id="d08c8248-7c60-4a6b-a7cd-d7c035b47850" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Junaid Qadir, and Ala Al-Fuqaha,<a href="https://arxiv.org/abs/1908.00635"> “Black-box Adversarial ML Attack on Modulation Classification”</a> accepted as a poster paper in ACM-AINTEC, 2019.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2018</summary><div class="indented"><ul id="54e56fc2-99f8-446c-b275-f58beeb7ead2" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Junaid Qadir, and Ala Al-Fuqaha, <a href="https://ieeexplore.ieee.org/abstract/document/8628538">“Adversarial Attacks on Cognitive Self-Organizing Networks: The Challenge and the Way Forward”</a> accepted as a workshop paper in the 43rd IEEE Conference on Local Computer Networks Conference IEEE LCN, 2018.</li></ul><ul id="a824d254-0a85-4d2b-9e10-af8afbf19bce" class="bulleted-list"><li style="list-style-type:disc">Touseef Yaqoob, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark><span style="border-bottom:0.05em solid">,</span> Junaid Qadir, and Gareth Tyson. <a href="https://dl.acm.org/doi/abs/10.1145/3229584.3229588">“On Analyzing Self-Driving Networks: A Systems Thinking Approach”</a> accepted in ACM SIGCOMM Workshop on Self-Driving Networks, 2018.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2017</summary><div class="indented"><ul id="dacee612-7883-420c-b26f-188bc70cff62" class="bulleted-list"><li style="list-style-type:disc">Junaid Qadir, Arjuna Sathiaseelan, Umar Bin Farooq, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Muhammad Ali Imran, and Muhammad Shafique, <a href="https://www.mdpi.com/1999-5903/9/4/94">“Approximate Networking for Universal Internet Access”</a>, Future Internet, 2017.</li></ul><ul id="a1a0ecaa-105d-4b7a-8833-e8d48e9e0e9d" class="bulleted-list"><li style="list-style-type:disc">S. Latif, F. Pervez, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">M. Usama</span></strong></mark>, J. Qadir, <a href="https://arxiv.org/abs/1702.02823">“Artificial Intelligence as an Enabler for Cognitive Self-Organizing Future Networks”</a>,  published in the Special Issue on “Enabling Mobile Computing and Cognitive Networks through Artificial Intelligence” published in IEEE Communications Society (ComSoc)’s blog on Cognitive Radio Networking and Security, Feb 2017.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Publications in 2013</summary><div class="indented"><ul id="283f1826-1a8f-446a-b9b2-77e1af40b4b6" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, and Muhammad S Sheikh. <a href="https://ieeexplore.ieee.org/abstract/document/6582860">“Vector Indexing Algorithm for Post Processing of OTDR Data”</a> accepted in 18th European Conference on Network and Optical Communications NOC, 2013</li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Papers under review</summary><div class="indented"><ul id="7516c23d-cdea-4521-9351-d1f2b0758533" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Abdur Rahman, Zubair Khalid, Muhammad Tahir, and Momin Uppal, <a href="https://www.preprints.org/manuscript/202204.0232/v1">“Urban Air Quality Measurements: A Survey”</a> under review in Urban Climate.</li></ul><ul id="6addba09-4029-4f50-a293-96ebe93d33ac" class="bulleted-list"><li style="list-style-type:disc">Siddique Latif, Hafiz Shehbaz Ali, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Rajib Rana, Björn Schuller, Junaid Qadir, “<a href="https://arxiv.org/abs/2211.07290">AI-Based Emotion Recognition: Promise, Peril, and Prescriptions for Prosocial Path</a>” Under review in IEEE Transactions on Affective Computing.  </li></ul><ul id="92862a7f-64f8-449f-8830-69df706da324" class="bulleted-list"><li style="list-style-type:disc">Ilahi, Inaam, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, Muhammad Omer Farooq, Muhammad Umar Janjua, and Junaid Qadir, <a href="https://arxiv.org/abs/2012.11867">“Intelligent Resource Allocation in Dense LoRa Networks using Deep Reinforcement Learning”</a> under review in IEEE Internet of Things Journal.</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Blog posts and reports </summary><div class="indented"><ul id="8e275f01-6808-4636-ae56-77fe06229ef3" class="bulleted-list"><li style="list-style-type:disc">“Finding the blue skies: Lahore’s Air Apocalypse”, by <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">M. Usama</span></strong></mark>, available on https://sdsa.lums.edu.pk/, 2022.</li></ul><ul id="26e4a624-1415-474f-a8f1-7698facf75a6" class="bulleted-list"><li style="list-style-type:disc">“Artificial Intelligence as an Enabler for Cognitive Self-Organizing Future Networks”, S. Latif, F. Pervez, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">M. Usama</span></strong></mark>, J. Qadir, published in the Special Issue on “Enabling Mobile Computing and Cognitive Networks through Artificial Intelligence” published in IEEE Communications Society (ComSoc)’s blog on Cognitive Radio Networking and Security, Feb 2017.</li></ul><ul id="103d5e4e-fe87-4402-815a-f1b99210731c" class="bulleted-list"><li style="list-style-type:disc">“Design Challenges in Wireless and Data Networks: Security as Case Study”, <mark class="highlight-orange"><strong><span style="border-bottom:0.05em solid">Muhammad Usama</span></strong></mark>, July 2017.</li></ul></div></details><hr id="7f177fd9-2251-4d9f-946b-8e4d47354db1"/><h2 id="6ed93ebd-5adc-4992-a762-186e33d49875" class="">🗣 Selected Talks</h2><ul id="8ea6b16b-ecf4-498e-bc10-b92d3e63780e" class="bulleted-list"><li style="list-style-type:disc">Finding the Blue Skies: Lahore’s Air Apocalypse in Saving Our Cities: with technology &amp; data-driven policy-making, SDSA, 2022, LUMS, Pakistan</li></ul><ul id="a75625f7-7742-4797-95da-322784c7578f" class="bulleted-list"><li style="list-style-type:disc">Urban Computing: Using Data Science for Urban Data, 2022, AtomCamp, Pakistan </li></ul><ul id="955a6c39-a8ee-400f-945d-8b6a9d20a243" class="bulleted-list"><li style="list-style-type:disc">Urban Computing: Using Data Science for Urban Sustainability, 2022,  AtomCamp, Pakistan </li></ul><ul id="57a494f7-1bc3-4d68-a676-dfc43a159ed6" class="bulleted-list"><li style="list-style-type:disc">Design Thinking: Solving Urban Issues, 2022, National University of Computer and Emerging Sciences (NUCES), CFD, Pakistan</li></ul><ul id="242b1a79-752b-44cb-ba6d-766d8d31ce27" class="bulleted-list"><li style="list-style-type:disc">Examining Machine Learning for 5G and Beyond through an Adversarial Lens” in Next Generation Networking, Multi-Service Networks workshop (Coseners, 2021), UK.</li></ul><hr id="6aec609e-fe52-4984-ba7f-4691c76faa21"/><h2 id="738a3735-8b1a-4d5a-9375-43ab0bb6b0f0" class="">💻 Awards and Honors</h2><ul id="02aa3cf8-3d36-4ad6-81d7-df944dea7c69" class="bulleted-list"><li style="list-style-type:disc">Won a FRSG Grant of PKR 0.9 Million, 2023</li></ul><ul id="22723d76-6534-43ed-a25b-a11eea9426c1" class="bulleted-list"><li style="list-style-type:disc">Won an FIF Grant of PKR 01 Million from LUMS, 2022 </li></ul><ul id="7614abb3-b936-4b97-a80a-a2ce74ffdc73" class="bulleted-list"><li style="list-style-type:disc">Accepted for Oxford Machine Learning Summer School, OxML, 2020.</li></ul><ul id="0a0c731a-bb2c-45b4-95b5-fe854b331d93" class="bulleted-list"><li style="list-style-type:disc">Recipient of the travel grant for attending the ACM-IMC, 2019.</li></ul><ul id="ec4f0d50-58fe-4e55-9dff-d411fc486c32" class="bulleted-list"><li style="list-style-type:disc">Recipient of the travel grant for for attending the ACM-AINTEC, 2019.</li></ul><ul id="94c2f5dc-9a5d-4e0b-ac5c-30a1300271ef" class="bulleted-list"><li style="list-style-type:disc">Recipient of the Information Technology University (ITU), Ph.D. Scholarship 2016 to 2020.</li></ul><hr id="38b0c8cb-50ff-4ce3-85de-266c4d9bfa1d"/><h2 id="19c9b767-a6ae-4db9-aaec-872a83ae0b14" class="">Services </h2><p id="c2a3354b-8e5d-45ae-8e51-66fb011f694e" class="">Reviewer</p><p id="22ffc62d-8ec7-4462-82b4-18285909c723" class="">– IEEE Transactions on Neural Networks and Learning Systems</p><p id="97ee0e84-60a7-4432-be35-5a3b6d5f47c5" class="">– IEEE Transactions on Cognitive Communications and Networking</p><p id="a656168e-f50b-412c-a44f-bd034ad5ff5d" class="">– IEEE Transactions on Machine Learning in Communications and Networking</p><p id="64125a18-9d25-4153-a6f1-42b4dfeff82c" class="">– IEEE Wireless Communications Letters</p><hr id="4523359a-1a44-4a20-a2f2-f434cf6570de"/><p id="0fb73e16-d476-4b87-9411-4bea746ccf20" class="">
+</p><hr id="3358b924-ed62-44e2-99cd-ab7c1af252f7"/><p id="6797e89d-8948-4f02-8572-dc3194cd0de7" class="">
+</p></div></article></body></html>
